@@ -22,11 +22,6 @@ uis.directive('uiSelectMatch', ['uiSelectConfig', function(uiSelectConfig) {
 
       attrs.$observe('allowClear', setAllowClear);
       setAllowClear(attrs.allowClear);
-
-      if($select.multiple){
-        $select.sizeSearchInput();
-      }
-
     }
   };
 }]);
